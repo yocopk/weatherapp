@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #222;
+}
+
+.card{
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;  
+}
+
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+}
+
+.search button{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.search button i.uil-search{
+    font-size: 24px;
+ }
+
+ .weather-icon{
+    width: 170px;
+    margin-top: 30px;
+ }
+
+ .weather h1{
+    font-size: 80px;
+    font-weight: 500;
+ }
+
+ .weather h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: 10px;
+ }
+
+ .details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+ }
+
+ .col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+ }
+
+ .col img{
+    width: 40px;
+    margin-right: 10px;
+ }
+
+ .col i.uil-wind{
+    font-size: 40px;
+    margin-right: 10px;
+ }
+
+ .humidity, .wind{
+    font-size: 28px;
+    margin-top: -6px;
+ }
+
+ .error{
+   text-align: left;
+   margin-left: 15px;
+   font-size: 14px;
+   margin-top: 10px;
+   display: none;
+ }
+
+@media (max-width: 767px) {
+   .card {
+     padding: 20px 15px; /* Riduci il padding per adattarsi a schermi più piccoli */
+   }
+ 
+   .search input {
+     padding: 8px 20px; /* Riduci il padding dell'input per adattarsi a schermi più piccoli */
+     height: 50px; /* Riduci l'altezza dell'input per adattarsi a schermi più piccoli */
+     font-size: 16px; /* Riduci la dimensione del testo dell'input per adattarsi a schermi più piccoli */
+   }
+ 
+   .search button {
+     width: 45px; /* Riduci la larghezza del pulsante di ricerca per adattarsi a schermi più piccoli */
+     height: 45px; /* Riduci l'altezza del pulsante di ricerca per adattarsi a schermi più piccoli */
+     margin-left: -3px;
+   }
+ 
+   .weather h1 {
+     font-size: 50px; /* Riduci la dimensione del testo del titolo per adattarsi a schermi più piccoli */
+   }
+ 
+   .weather h2 {
+     font-size: 30px; /* Riduci la dimensione del testo del sottotitolo per adattarsi a schermi più piccoli */
+     margin-top: 5px; /* Riduci il margine superiore del sottotitolo per adattarsi a schermi più piccoli */
+   }
+ 
+   .details {
+     flex-direction: column; /* Imposta i dettagli in colonna per adattarsi a schermi più piccoli */
+     margin-top: 30px; /* Riduci il margine superiore dei dettagli per adattarsi a schermi più piccoli */
+   }
+ 
+   .col {
+     margin-bottom: 15px; /* Aggiungi un margine inferiore ai dettagli per adattarsi a schermi più piccoli */
+   }
+ 
+   .col img {
+     width: 30px; /* Riduci la larghezza dell'icona per adattarsi a schermi più piccoli */
+   }
+ 
+   .col i.uil-wind {
+     font-size: 30px; /* Riduci la dimensione dell'icona del vento per adattarsi a schermi più piccoli */
+   }
+ 
+   .humidity,
+   .wind {
+     font-size: 22px; /* Riduci la dimensione del testo di umidità e velocità del vento per adattarsi a schermi più piccoli */
+     margin-top: -4px; /* Riduci il margine superiore dei dati per adattarsi a schermi più piccoli */
+   }
+ 
+   .error {
+     font-size: 12px; /* Riduci la dimensione del testo dell'errore per adattarsi a schermi più piccoli */
+   }
+ }
+
+ 
