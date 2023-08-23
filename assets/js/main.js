@@ -14,8 +14,6 @@ async function checkWeather(city) {
   } else {
     let data = await response.json();
 
-    console.log(data);
-
     document.querySelector(".city").innerHTML = data.name;
     document.querySelector(".temp").innerHTML =
       Math.round(data.main.temp) + "°C";
@@ -33,6 +31,7 @@ async function checkWeather(city) {
     } else if (data.weather[0].main == "Mist") {
       weatherIcon.src = "assets/img/mist.png";
     }
+    document.querySelector(".weather").style.display = "block";
     document.querySelector(".error").style.display = "none";
   }
 }

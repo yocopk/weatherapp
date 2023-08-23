@@ -161,4 +161,8 @@ body{
    }
  }
 
+ .weather{
+  display: none;
+ }
+
  
